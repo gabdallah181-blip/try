@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document </title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <ul class="jewelry">
+                <h2>ECLIPSE</h2>
+                <span>COFFE</span>
+            </ul>
+            <nav>
+                <ul class="acount">
+                    <li><a class="login"  href="login.html">Login</a></li>
+                    <li><a class="register" href="register.html">Register</a></li>
+                </ul>
+                <ul id="user-info">
+                    <li>Hello,<a href="" id="user"></a></li>
+                    <li id="shopping-cart">
+                        <a class="fav-items" href="FavoriteItems.html">
+                            Favorite<i class="fa-solid fa-heart"></i>
+                        </a>
+                        <i class="cart fa-solid fa-cart-shopping"></i>
+                        <span class="count"></span>
+                        <div id="carts-products">
+                            <a href="cartsproducts.html">View all products</a>
+                            <div></div>
+                        </div>
+                    </li>
+                    <li><a id="logout" href="login.html">LogOut</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+    <section>
+        <div class="container">
+            <div class="section-head">
+                <select id="searchType">
+                    <option value="name">search by product name</option>
+                    <option value="category">search by category</option>
+                </select>
+                <input type="text" placeholder="Search..." id="searchInput">
+                <button id="searchBtn">Search</button>
+            </div>
+            <div class="products">
+            </div>
+        </div>
+    </section>
+
+
+
+    
+    <script src="js/script.js"></script>
+</body>
+
+</html>
