@@ -3,6 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: rgb(48,32,23);
+    /* background-color: black; */
+}
 ul{
     list-style: none;
     display: flex;
@@ -12,8 +16,6 @@ header ul a{
     color: black;
 }
 header{
-    /* background-color: rgb(235, 235, 235);*/
-    background-color: rgb(48,32,23);
     height: 100px;
     position: relative;
     box-shadow: 4px -5px 5px 5px rgb(202, 186, 159);
@@ -163,8 +165,10 @@ header .container nav #user-info #shopping-cart #carts-products div{
     margin-top: 20px;
 }
 /* ////////////////////////////////////////////////   section */
+/* section.sec-fav,section.carts-pro{
+    height: calc(100vh - 100px) ;
+} */
 section{
-    background-color: rgb(48,32,23);
     padding-top: 40px;
 }
 section .container{
@@ -207,7 +211,6 @@ section .container form .div-content input:not(#checkbox){
     
 }
 section .container form .div-content button{
-    background-color: rgb(30, 138, 252);
     border-radius: 5px;
     padding: 10px 15px;
     border: none;
@@ -215,8 +218,17 @@ section .container form .div-content button{
     margin-bottom: 10px;
     cursor: pointer;
 }
-section .container form .div-content button:hover{
-    background-color: rgb(12, 69, 131);
+section .container form .div-content #BtnRegister{
+    background-color: rgb(0, 123, 0);
+}
+section .container form .div-content #BtnRegister:hover{
+    background-color: rgb(0, 69, 0);
+}
+section .container form .div-content #BtnLogin{
+    background-color: rgb(30, 138, 252);
+}
+section .container form .div-content #BtnLogin:hover{
+    background-color: rgb(0, 60, 123);
 }
 section .container form .div-content div{
     font-size: 18px;
@@ -322,6 +334,10 @@ section .container .price{
 section .container .title-header{
     text-align: center;
     font-size: 40px;
+    color: rgb(202, 186, 159);
+}
+section .container .empty{
+    color: rgb(202, 186, 159);
 }
 header .container nav ul .fav-items{
     margin: 0 30px;
@@ -414,7 +430,12 @@ header .container nav ul .home-page{
     header .container nav #user-info #shopping-cart #carts-products a{
         padding: 5px 10px;
     }
-
+    /* section.sec-fav,section.carts-pro{
+        height: calc(100vh - 60px) ;
+    } */
+    section .container .title-header{
+        font-size: 30px;
+    }
     section .container .section-head{
         gap: 0 5px;
     }

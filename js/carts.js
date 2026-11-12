@@ -53,8 +53,17 @@ function drawItem() {
 
     if (product.length === 0) {
 
-        allproducts.innerHTML =`<p>Your Cart Is Empty</p>`
+        allproducts.innerHTML =`<p class="empty">Your Cart Is Empty</p>`
 
+        // let carts_pro = document.querySelector(".carts-pro")
+        // let carts_pr_header = document.querySelector(".carts-pro-header")
+        // let h_header = 60
+        // if (carts_pr_header.offsetHeight === h_header ) {
+        //     carts_pro.style.height = 'calc(100vh - 60px)' ;   
+        // }
+        // else{
+        //     carts_pro.style.height = 'calc(100vh - 100px)' ;  
+        // }
     }
 
 }
