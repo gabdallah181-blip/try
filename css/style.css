@@ -83,7 +83,7 @@ header .container nav{
 }
 header .container nav #user-info{
     display: none;
-    gap: 0 20px;
+    gap: 0 40px;
     font-size: 18px;
 }
 header .container nav li:first-child{
@@ -157,7 +157,7 @@ header .container nav #user-info #shopping-cart #carts-products a{
 }
 header .container nav #user-info #shopping-cart #carts-products a:hover{
     color: white;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 header .container nav #user-info #shopping-cart #carts-products div{
     margin-top: 20px;
@@ -316,6 +316,7 @@ section .container .products button{
 section .container .price{
     font-size: 30px;
     text-align: center;
+    color: rgb(202, 186, 159);
 }
 /* ////////////////////////////////////////   favorite items */
 section .container .title-header{
@@ -323,7 +324,7 @@ section .container .title-header{
     font-size: 40px;
 }
 header .container nav ul .fav-items{
-    margin: 0 20px;
+    margin: 0 30px;
     padding: 5px 10px;
     border: 1px solid rgb(100, 100, 100);
     border-radius: 5px;
@@ -344,6 +345,7 @@ header .container nav ul .fav-items .fa-heart{
     font-size: 20px;
     color: rgb(220, 0, 0);
     margin-left: 3px;
+    display: inline;
 }
 header .container nav ul .home-page{
     margin: 0 20px;
@@ -369,6 +371,9 @@ header .container nav ul .home-page{
     height: 50px !important;
     margin-left: -15px;
     }
+    header .container nav #user-info{
+        gap: 0 20px;
+    }
     header .container nav #user-info li:first-child{
         font-size: 12px;
     }
@@ -382,8 +387,7 @@ header .container nav ul .home-page{
         margin: 0 10px 0 0;
     }
     header .container nav #user-info #shopping-cart a:first-child i{
-        font-size: 14px;
-        display: inline-block;
+        font-size: 12px;
     }
     header .container nav #user-info #shopping-cart .cart{
         font-size: 20px;
@@ -398,6 +402,7 @@ header .container nav ul .home-page{
     header .container nav #user-info #shopping-cart #carts-products {
         width: 150px !important;
         font-size: 12px !important;
+        right: -80px;
     }
     header .container .jewelry span{
     font-size: 10px;
@@ -436,9 +441,20 @@ header .container nav ul .home-page{
         align-items: center;
     }
 }
-@media (max-width:532px){
+@media (min-width:400px)and(max-width:532px){
     header .container nav #user-info #logout{
         font-size: 12px;
+    }
+    header .container .jewelry img{
+    width: 150px !important;
+    height: 70px !important;
+    margin-left: -20px;
+    }
+    header .container nav #user-info{
+    gap: 0 20px;
+    }
+    header .container nav ul .fav-items {
+        margin: 0 10px;
     }
     section .container .products{
         grid-template-columns: repeat(1,1fr) !important;
