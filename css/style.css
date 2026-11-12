@@ -12,9 +12,11 @@ header ul a{
     color: black;
 }
 header{
-    background-color: rgb(235, 235, 235);
-    /* background-color: black; */
+    /* background-color: rgb(235, 235, 235);*/
+    background-color: rgb(48,32,23);
     height: 100px;
+    position: relative;
+    box-shadow: 4px -5px 5px 5px rgb(202, 186, 159);
 }
 header .container{
     height: 100%;
@@ -31,14 +33,16 @@ header .container .jewelry{
     flex-direction: column;
 }
 header .container .jewelry img{
-    width: 200px;
-    height: 70px;
+    width: 180px !important;
+    height: 70px !important;
+    margin-left: -20px;
 }
 header .container .jewelry span{
-    font-size: 10px;
+    font-size: 18px;
     text-align: center;
-    letter-spacing: 4px;
-    margin-top: 5px;
+    letter-spacing: 5px;
+    color: rgb(202, 186,159);
+    margin-left: -20px;
 }
 header .container .acount{
     gap: 0 20px;
@@ -72,16 +76,27 @@ header .container .acount .register:hover{
 }
 
 /* ////////////////////////////////// */
+header .container nav{
+    display: flex;
+    align-items: center;
+}
 header .container nav #user-info{
     display: none;
     gap: 0 20px;
     font-size: 18px;
 }
+header .container nav li:first-child{
+    color: rgb(202, 186,159);
+}
 header .container nav #user{
     color:rgb(30, 138, 252);
 }
+header .container nav #user-info li:last-child{
+    display: flex;
+    align-items: center;
+}
 header .container nav #user-info #logout{
-    padding: 10px 10px;
+    padding: 5px 10px;
     border: 1px solid red;
     border-radius: 5px;
     cursor: pointer;
@@ -104,6 +119,7 @@ header .container nav #user-info #shopping-cart{
 header .container nav #user-info #shopping-cart .cart{
     font-size: 30px;
     cursor: pointer;
+    color: rgb(202, 186,159);
 }
 header .container nav #user-info #shopping-cart .count{
     position: absolute;
@@ -146,10 +162,14 @@ header .container nav #user-info #shopping-cart #carts-products div{
     margin-top: 20px;
 }
 /* ////////////////////////////////////////////////   section */
+section{
+    background-color: rgb(48,32,23);
+    padding-top: 40px;
+}
 section .container{
     width: 85%;
     margin: auto;
-    margin-top: 40px;
+    /* margin: 0 40px 40px 40px; */
 }
 section .container form{
     padding: 30px;
@@ -239,31 +259,19 @@ section .container .section-head input{
 section .container .section-head button{
     padding: 10px 40px;
     background-color: black;
-    opacity: 0.6;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgb(202, 186, 159);
     cursor: pointer;
     transition: all 0.2s;
 }
 section .container .section-head button:hover{
-    opacity: 1;
+    background-color: rgb(202, 186, 159);
+    color:black;
 }
 section .container .products{
-    margin: 50px 0;
+    padding: 50px 0;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 30px;
-}
-section .container .products button{
-    padding: 10px 20px;
-    background-color:rgb(30, 138, 252);
-    border: none;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    transition:all 0.2s;
-}
-section .container .products button:focus {
-    background-color: rgb(12, 69, 131);
 }
 section .container .products img{
     width: 100%;
@@ -271,9 +279,8 @@ section .container .products img{
     border-radius: 5px 5px 0 0 ;
 }
 section .container .products .product-item{
-    border: 1px solid rgb(100, 100, 100);
+    border: 1px solid rgb(202, 186,159);
     border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
     padding-bottom: 30px;
 }
 section .container .products .product-info{
@@ -281,6 +288,7 @@ section .container .products .product-info{
 }
 section .container .products .product-info .info{
     margin: 20px 0;
+    color: rgb(202, 186, 159);
 }
 section .container .products .product-info .info p{
     margin: 10px 0;
@@ -289,9 +297,19 @@ section .container .products .product-info i{
     font-size: 20px;
     margin-right: 10px;
     cursor: pointer;
+    color: white;
 }
 section .container .products .product-info i.active{
     color: red;
+}
+section .container .products button{
+    padding: 10px 20px;
+    background-color: rgb(202, 186, 159);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:all 0.2s;
 }
 /* //////////////  total price */
 section .container .price{
@@ -308,6 +326,7 @@ header .container nav ul .fav-items{
     padding: 5px 10px;
     border: 1px solid rgb(100, 100, 100);
     border-radius: 5px;
+    color: rgb(202, 186,159);
 }
 header .container nav ul .fav-items:hover,
 header .container nav ul .home-page:hover{
@@ -343,13 +362,14 @@ header .container nav ul .home-page{
     header .container .jewelry span{
         font-size: 8px;
     }
+    header .container .jewelry img{
+    width: 100px !important;
+    height: 50px !important;
+    margin-left: -15px;
+    }
     header .container nav #user-info li:first-child{
         font-size: 12px;
     }
-    /* header .container nav #user-info{
-        display: flex;
-        justify-content: space-around;
-    } */
     header .container nav #user-info #logout{
         font-size: 12px;
         padding: 5px 10px;
@@ -377,12 +397,57 @@ header .container nav ul .home-page{
         width: 150px !important;
         font-size: 12px !important;
     }
+    header .container .jewelry span{
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: 4px;
+    color: rgb(202, 186,159);
+    margin-left: -15px;
+    }
     header .container nav #user-info #shopping-cart #carts-products a{
         padding: 5px 10px;
     }
 
     section .container .section-head{
         gap: 0 5px;
+    }
+    section .container .section-head select,
+    section .container .section-head input,
+    section .container .section-head button{
+        font-size: 8px;
+        height: 25px;
+    }
+    section .container .products{
+        grid-template-columns: repeat(1,1fr) !important;
+        padding: 25px 0;
+    }
+    section .container .products .product-item{
+        padding-bottom: 15px;
+        margin-top: 10px;
+    }
+    section .container .products img{
+        height: 150px;
+    }
+    section .container .products .product-item .add-product{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width:532px){
+    header .container nav #user-info #logout{
+        font-size: 12px;
+    }
+    section .container .products{
+        grid-template-columns: repeat(1,1fr) !important;
+        padding: 25px 0;
+    }
+    section .container .products .product-item{
+        padding-bottom: 15px;
+        margin-top: 10px;
+    }
+    section .container .section-head {
+        gap: 0 10px;
     }
     section .container .section-head select,
     section .container .section-head input,
@@ -401,36 +466,30 @@ header .container nav ul .home-page{
     section .container .section-head button{
         padding: 5px 10px;
     }
-    section .container .products{
-        grid-template-columns: repeat(2,1fr);
-        gap: 10px;
-        margin: 25px 0;
-    }
-    section .container .products .product-item{
-        padding-bottom: 15px;
-    }
-    section .container .products img{
-        height: 150px;
-    }
-    section .container .products .product-item .add-product{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    section .container .products .product-item .add-product button{
-        font-size: 10px;
-        padding: 5px;
-
-    }
-    section .container .products .product-item .add-product i{
-        font-size: 15px;
-    }
-
 }
 @media (max-width:768px){
     section .container .products{
         grid-template-columns: repeat(2,1fr);
         gap: 10px;
+    }
+    section .container .section-head {
+        gap: 0 10px;
+    }
+    section .container .section-head select,
+    section .container .section-head input,
+    section .container .section-head button{
+        height: 25px;
+    }
+    section .container .section-head #searchType{
+        padding-left: 5px;
+        padding-right: 0px;
+    }
+    section .container .section-head input{
+        flex: 1;
+        padding-left: 10px;
+    }
+    section .container .section-head button{
+        padding: 5px 10px;
     }
 }
 

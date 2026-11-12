@@ -38,7 +38,7 @@ let allproducts = document.querySelector(".products")
 let products = [
     {
         id: 1,
-        imgUrl: "images/iPhone_16_pro_max.jpeg",
+        imgUrl:"images/coffe.jpeg",
         title: "iphone17 pro max",
         price: "1500$",
         category: "mobile"
