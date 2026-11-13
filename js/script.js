@@ -41,28 +41,28 @@ let products = [
         imgUrl:"images/Espresso.jpeg",
         title: "Espresso",
         price: "10$",
-        category: "coffe"
+        category: "coffee"
     },
     {
         id: 2,
         imgUrl: "images/latte.jpeg",
         title: "Latte",
         price: "15$",
-        category: "coffe"
+        category: "coffee"
     },
     {
         id: 3,
         imgUrl: "images/Espresso Macchiato.jpeg",
         title: "Espresso Macchiato",
         price: "10$",
-        category: "coffe"
+        category: "coffee"
     },
     {
         id: 4,
         imgUrl: "images/latte Macchiato.jpeg",
         title: "latte Macchiato",
         price: "15$",
-        category: "coffe"
+        category: "coffee"
     },
     
     {
@@ -70,35 +70,35 @@ let products = [
         imgUrl: "images/Turkish coffe.jpeg",
         title: "Turkish Coffe",
         price: "10$",
-        category: "coffe"
+        category: "coffee"
     },
     {
         id: 6,
         imgUrl: "images/Ice latte.jpeg",
         title: "Ice Latte",
         price: "20$",
-        category: "coffe"
+        category: "coffee"
     },
     {
         id: 7,
         imgUrl:"images/frappucciono.jpeg",
         title: "Frappucciono",
         price: "25$",
-        category: "perfume"
+        category: "coffee"
     },
     {
         id: 8,
         imgUrl:"images/coffe Mocha (2).jpeg",
         title: "coffe Mocha",
         price: "25$",
-        category: "coffe"
+        category: "coffee"
     },
     {
         id: 9,
         imgUrl:"images/coffe mocha.jpeg",
         title: "Coffe Mocha",
         price: "20$",
-        category: "coffe"
+        category: "coffee"
     }
 ]
 

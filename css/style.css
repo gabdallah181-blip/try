@@ -59,7 +59,7 @@ header .container .acount{
     gap: 0 20px;
 }
 header .container .acount a{
-    font-size: 20px;
+    font-size: 16px;
     padding: 5px 10px;
     border: 1px solid;
     border-radius: 5px;
@@ -429,9 +429,6 @@ footer .container .icons i:hover{
     header .container{
         margin: 0 10px;
 
-    }
-    header .container .coffee h2{
-        font-size: 14px;
     }
     header .container .coffee span{
         font-size: 8px;
