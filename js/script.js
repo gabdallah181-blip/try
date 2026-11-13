@@ -38,45 +38,67 @@ let allproducts = document.querySelector(".products")
 let products = [
     {
         id: 1,
-        imgUrl:"images/coffe.jpeg",
-        title: "iphone17 pro max",
-        price: "1500$",
-        category: "mobile"
+        imgUrl:"images/Espresso.jpeg",
+        title: "Espresso",
+        price: "10$",
+        category: "coffe"
     },
     {
         id: 2,
-        imgUrl: "images/shirt.jpeg",
-        title: "black shirt",
-        price: "500$",
-        category: "clothes"
+        imgUrl: "images/latte.jpeg",
+        title: "Latte",
+        price: "15$",
+        category: "coffe"
     },
     {
         id: 3,
-        imgUrl: "images/perfume.jpeg",
-        title: "luxa",
-        price: "100$",
-        category: "perfume"
+        imgUrl: "images/Espresso Macchiato.jpeg",
+        title: "Espresso Macchiato",
+        price: "10$",
+        category: "coffe"
     },
     {
         id: 4,
-        imgUrl: "images/iPhone_16_pro_max.jpeg",
-        title: "iphone17 pro max",
-        price: "1500$",
-        category: "mobile"
+        imgUrl: "images/latte Macchiato.jpeg",
+        title: "latte Macchiato",
+        price: "15$",
+        category: "coffe"
     },
+    
     {
         id: 5,
-        imgUrl: "images/shirt.jpeg",
-        title: "black shirt",
-        price: "500$",
-        category: "clothes"
+        imgUrl: "images/Turkish coffe.jpeg",
+        title: "Turkish Coffe",
+        price: "10$",
+        category: "coffe"
     },
     {
         id: 6,
-        imgUrl: "images/perfume.jpeg",
-        title: "luxa",
-        price: "100$",
+        imgUrl: "images/Ice latte.jpeg",
+        title: "Ice Latte",
+        price: "20$",
+        category: "coffe"
+    },
+    {
+        id: 7,
+        imgUrl:"images/frappucciono.jpeg",
+        title: "Frappucciono",
+        price: "25$",
         category: "perfume"
+    },
+    {
+        id: 8,
+        imgUrl:"images/coffe Mocha (2).jpeg",
+        title: "coffe Mocha",
+        price: "25$",
+        category: "coffe"
+    },
+    {
+        id: 9,
+        imgUrl:"images/coffe mocha.jpeg",
+        title: "Coffe Mocha",
+        price: "20$",
+        category: "coffe"
     }
 ]
 

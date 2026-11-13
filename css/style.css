@@ -16,9 +16,18 @@ header ul a{
     color: black;
 }
 header{
+    width: 100%;
     height: 100px;
     position: relative;
-    box-shadow: 4px -5px 5px 5px rgb(202, 186, 159);
+}
+header::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(202, 186, 159);
 }
 header .container{
     height: 100%;
@@ -30,16 +39,16 @@ header .container{
 header .container nav .acount li{
     margin: 0 10px;
 }
-header .container .jewelry{
+header .container .coffee{
     display: flex;
     flex-direction: column;
 }
-header .container .jewelry img{
+header .container .coffee img{
     width: 180px !important;
     height: 70px !important;
     margin-left: -20px;
 }
-header .container .jewelry span{
+header .container .coffee span{
     font-size: 18px;
     text-align: center;
     letter-spacing: 5px;
@@ -169,7 +178,7 @@ header .container nav #user-info #shopping-cart #carts-products div{
     height: calc(100vh - 100px) ;
 } */
 section{
-    padding-top: 40px;
+    padding: 40px 0;
 }
 section .container{
     width: 85%;
@@ -289,15 +298,23 @@ section .container .products{
 section .container .products img{
     width: 100%;
     height: 300px;
-    border-radius: 5px 5px 0 0 ;
+    border-radius: 10px 10px 0 0 ;
 }
 section .container .products .product-item{
     border: 1px solid rgb(202, 186,159);
-    border-radius: 5px;
+    border-radius: 10px;
     padding-bottom: 30px;
 }
 section .container .products .product-info{
     text-align: center;
+    color: rgb(202, 186, 159);
+}
+section .container .products .product-info p{
+    margin: 5px 0;
+}
+section .container .products .product-info .i-fav{
+    margin-right: 0;
+    margin-top: 5px;
 }
 section .container .products .product-info .info{
     margin: 20px 0;
@@ -366,6 +383,43 @@ header .container nav ul .fav-items .fa-heart{
 header .container nav ul .home-page{
     margin: 0 20px;
 }
+/* //////////////////////////// footer */
+footer{
+    height: 80px;
+    position: relative;
+}
+footer::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(202, 186, 159);
+}
+footer .container{
+    width: 85%;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+footer .container p{
+    color: rgb(202, 186, 159);
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+footer .container .icons i{
+    color: rgb(202, 186, 159);
+    margin-left: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+footer .container .icons i:hover{
+    transform: scale(1.2);
+}
 /* //////////////////////    Responsive */
 /* ///////////////  Home Pge */
 @media (max-width:399px){
@@ -376,13 +430,13 @@ header .container nav ul .home-page{
         margin: 0 10px;
 
     }
-    header .container .jewelry h2{
+    header .container .coffee h2{
         font-size: 14px;
     }
-    header .container .jewelry span{
+    header .container .coffee span{
         font-size: 8px;
     }
-    header .container .jewelry img{
+    header .container .coffee img{
     width: 100px !important;
     height: 50px !important;
     margin-left: -15px;
@@ -420,7 +474,7 @@ header .container nav ul .home-page{
         font-size: 12px !important;
         right: -80px;
     }
-    header .container .jewelry span{
+    header .container .coffee span{
     font-size: 10px;
     text-align: center;
     letter-spacing: 4px;
@@ -430,9 +484,6 @@ header .container nav ul .home-page{
     header .container nav #user-info #shopping-cart #carts-products a{
         padding: 5px 10px;
     }
-    /* section.sec-fav,section.carts-pro{
-        height: calc(100vh - 60px) ;
-    } */
     section .container .title-header{
         font-size: 30px;
     }
@@ -453,20 +504,30 @@ header .container nav ul .home-page{
         padding-bottom: 15px;
         margin-top: 10px;
     }
-    section .container .products img{
-        height: 150px;
-    }
     section .container .products .product-item .add-product{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    footer{
+        height: 50px;
+    }
+    footer .container{
+        padding: 20px 0;
+    }
+    footer .container p{
+        font-size: 10px;
+    }
+    footer .container .icons i{
+        font-size: 10px;
+        margin-left: 5px;
     }
 }
 @media (min-width:400px)and(max-width:532px){
     header .container nav #user-info #logout{
         font-size: 12px;
     }
-    header .container .jewelry img{
+    header .container .coffee img{
     width: 150px !important;
     height: 70px !important;
     margin-left: -20px;
@@ -509,7 +570,6 @@ header .container nav ul .home-page{
 @media (max-width:768px){
     section .container .products{
         grid-template-columns: repeat(2,1fr);
-        gap: 10px;
     }
     section .container .section-head {
         gap: 0 10px;
@@ -531,7 +591,16 @@ header .container nav ul .home-page{
         padding: 5px 10px;
     }
 }
-
+@media(min-width:400px)and(max-width:768px){
+    footer .container p{
+        font-size: 15px;
+    }
+    footer .container .icons i{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    
+}
 
 
 

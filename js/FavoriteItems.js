@@ -21,7 +21,7 @@
                     <p>${item.price}</p>
                     <p>${item.category}</p>
     
-                    <i class="fa-solid fa-heart 
+                    <i class="fa-solid fa-heart  i-fav
                         ${FavoriteItems.some((fav) => fav.id === item.id) ? "active" : ""}"
                         onclick="removeFavorite(${item.id}, this)">
                         </i>
