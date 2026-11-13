@@ -453,6 +453,9 @@ footer .container .icons i:hover{
         padding: 5px 10px;
         margin: 0 10px 0 0;
     }
+    .carts-pro-header .container nav #user-info #shopping-cart a:first-child{
+        font-size: 10px;
+    }
     header .container nav #user-info #shopping-cart a:first-child i{
         font-size: 12px;
     }
