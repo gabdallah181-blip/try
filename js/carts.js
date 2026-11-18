@@ -4,13 +4,11 @@ let CarCount = document.querySelector(".count")
 
 let CartsProductsDiv = document.querySelector("#carts-products div")
 
-
 // Get Products From Local Storage
 
 let ProductsInCart = localStorage.getItem("ProductsInCart")
 
 let product = ProductsInCart ? JSON.parse(ProductsInCart) : []
-
 
 // Draw Products
 
@@ -92,8 +90,6 @@ function removefromcart(id) {
     GetTotalPrice(product)
 
 }
-
-
 // Update Cart
 
 function updateCart() {

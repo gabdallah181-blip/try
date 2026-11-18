@@ -261,8 +261,7 @@ section .container .section-head {
     gap: 0 20px;
 }
 section .container .section-head select,
-section .container .section-head input,
-section .container .section-head button{
+section .container .section-head input{
     height: 35px;
     font-size: 15px;
     border-radius: 5px;
@@ -270,24 +269,27 @@ section .container .section-head button{
     outline: none;
     color: rgb(100, 100, 100);
 }
+section .container .section-head input{
+    border-radius: 20px;
+}
 section .container .section-head select{
     padding-right: 30px;
     padding-left: 10px;
 }
 section .container .section-head input{
-    flex: 1;
+    width: 100%;
     padding-left: 10px;
 }
-section .container .section-head button{
-    padding: 10px 40px;
-    background-color: black;
-    color: rgb(202, 186, 159);
-    cursor: pointer;
-    transition: all 0.2s;
+section .container .section-head .search{
+    flex: 1;
+    position: relative;
 }
-section .container .section-head button:hover{
-    background-color: rgb(202, 186, 159);
-    color:black;
+section .container .section-head i{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 20px;
 }
 section .container .products{
     padding: 50px 0;
@@ -304,6 +306,29 @@ section .container .products .product-item{
     border: 1px solid rgb(202, 186,159);
     border-radius: 10px;
     padding-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+section .container .products .product-item::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 150px;
+    height: 100%;
+    /* background-color: rgba(255, 255, 255, 0.12); */
+    transform: skewX(-30deg);
+    background: linear-gradient(90deg,rgba(255,255,255,0.1)),transparent;
+    /* box-shadow: 2px 5px 5px rgba(255,255,255,0.1); */
+    transition: all 0.5s;
+}
+section .container .products .product-item:hover{
+    transform: scale(1.03);
+}
+section .container .products .product-item:hover::after{
+    left: 150%;
+    bottom: 0;
 }
 section .container .products .product-info{
     text-align: center;
@@ -336,7 +361,8 @@ section .container .products button{
     padding: 10px 20px;
     background-color: rgb(202, 186, 159);
     border: none;
-    color: white;
+    color: black;
+    font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
     transition:all 0.2s;
@@ -492,10 +518,12 @@ footer .container .icons i:hover{
         gap: 0 5px;
     }
     section .container .section-head select,
-    section .container .section-head input,
-    section .container .section-head button{
+    section .container .section-head input{
         font-size: 8px;
-        height: 25px;
+        height: 14px;
+    }
+    section .container .section-head i{
+        font-size: 14px;
     }
     section .container .products{
         grid-template-columns: repeat(1,1fr) !important;
@@ -581,8 +609,7 @@ footer .container .icons i:hover{
         gap: 0 10px;
     }
     section .container .section-head select,
-    section .container .section-head input,
-    section .container .section-head button{
+    section .container .section-head input{
         height: 25px;
     }
     section .container .section-head #searchType{
@@ -592,9 +619,6 @@ footer .container .icons i:hover{
     section .container .section-head input{
         flex: 1;
         padding-left: 10px;
-    }
-    section .container .section-head button{
-        padding: 5px 10px;
     }
 }
 @media(min-width:400px)and(max-width:768px){

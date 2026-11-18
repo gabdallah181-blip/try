@@ -1,4 +1,3 @@
-
 let acount = document.querySelector(".acount")
 let userInfo =document.querySelector("#user-info")
 let user =document.querySelector("#user")

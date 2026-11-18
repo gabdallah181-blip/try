@@ -151,7 +151,7 @@ function drawItem() {
                     <button
                         class="add_to_cart"
                         onclick="toggleCart(${item.id})"
-                        style="${isExist ? 'background-color:red' : ''}">
+                        style="${isExist ? 'background-color:red; color:white' : ''}">
 
                         ${isExist ? 'Remove from Cart' : 'Add to Cart'}
 
@@ -199,7 +199,7 @@ let searchType = document.querySelector("#searchType");
 let searchInput = document.querySelector("#searchInput");
 let searchBtn = document.querySelector("#searchBtn");
 
-searchBtn.addEventListener("click", function () {
+searchInput.addEventListener("input", function () {
 
     let searchValue = searchInput.value.toLowerCase().trim();
     if (searchValue ==="") {
