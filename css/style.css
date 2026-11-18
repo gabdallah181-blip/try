@@ -519,7 +519,7 @@ footer .container .icons i:hover{
     }
     section .container .section-head select,
     section .container .section-head input{
-        font-size: 8px;
+        font-size: 12px;
         height: 14px;
     }
     section .container .section-head i{
@@ -584,9 +584,7 @@ footer .container .icons i:hover{
         gap: 0 10px;
     }
     section .container .section-head select,
-    section .container .section-head input,
-    section .container .section-head button{
-        font-size: 8px;
+    section .container .section-head input{
         height: 25px;
     }
     section .container .section-head #searchType{
@@ -596,9 +594,6 @@ footer .container .icons i:hover{
     section .container .section-head input{
         flex: 1;
         padding-left: 10px;
-    }
-    section .container .section-head button{
-        padding: 5px 10px;
     }
 }
 @media (max-width:768px){
